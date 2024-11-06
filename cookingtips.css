@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+.body{
+    background: url(assests/Pancakes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 0;
+}
+.food52 {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.recipes {
+    font-size: 50px;
+    color: #000000;
+    z-index: 100;
+    visibility: visible;
+}
+
+.search {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.containers {
+    position: relative;
+    --size-button: 40px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+.input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #000000;
+    outline: 1px solid rgb(212, 160, 1);
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #d3ad04;
+    box-shadow: 1.5px 1.5px 3px #c59804, -1.5px -1.5px 3px rgba(207, 146, 2, 0.92), inset 0px 0px 0px #c89601, inset 0px -0px 0px #daa401;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.input:focus,
+.input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+    box-shadow: 0px 0px 0px #ceb603, 0px 0px 0px rgb(255, 255, 255), inset 1.5px 1.5px 3px #d3b701, inset -1.5px -1.5px 3px #deb900;
+}
+
+.input:focus+.icon,
+.input:not(:invalid)+.icon {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.containers .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+}
+
+.welcome {
+    outline: 6px solid #e4be5e;
+    padding: 0;
+    margin: 0;
+}
+
+.containers .icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.animationoflink {
+    /* background-color: transparent; */
+    /* border-radius: 20px; */
+    margin-left: 10px;
+    padding: 2px;
+    transition: 0.1s ease;
+}
+
+.animationoflink:hover {
+    color: rgb(227, 158, 8) !important;
+}
+
+@media screen and (max-width:991) {
+    .animationoflink::before {
+        padding-left: 20px;
+        margin-left: 0;
+    }
+}
+
+.Viewrecipe {
+    border-radius: 20px;
+    background-color: rgb(235, 235, 142);
+}
+
+
+
+@media screen and (min-width:1706px) {
+    .welcome {
+        font-size: 40px;
+    }
+
+    .food52 {
+        font-size: 23px;
+    }
+
+
+    .animationoflink {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    .welcome {
+        font-size: 60px;
+    }
+
+    .food52 {
+        font-size: 20px;
+    }
+
+    .animationoflink {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:911px) {
+    .welcome {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:1780px) {
+    .welcome {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:625px) {
+    .welcome {
+        font-size: 30px;
+    }
+
+    .se {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width:1808px) {}
+
+.navteam{
+    background: #000000c1;
+}
+
+.tips{
+    background-color: #000000b8;
+    
+}
+
+.content{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cookingtips{
+    font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/caveat/v18/Wnz6HAc5bAfYB2Q7azYYmg8.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    text-decoration: underline;
+}
